@@ -24,7 +24,7 @@ regr = linear_model.LinearRegression()
 regr.fit(diabetes_X_train, diabetes_y_train)
 
 # the coeff
-print('Coefficients: \n', regr.coef_)
+print('Coefficients: ', regr.coef_)
 
 print('Mean squared error: %.2f' % np.mean(regr.predict(diabetes_X_test) - diabetes_y_test) ** 2)
 
